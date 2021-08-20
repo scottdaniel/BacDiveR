@@ -27,18 +27,19 @@ Afterwards, remove the above from GitHub. -->
 
 1.  Because the [BacDive Web Service requires registration][reg] please do that first 
     and wait for DSMZ staff to grant you access.
-
-2.  Once you have your login credentials, install the [latest BacDiveR release][releases]
-    from GitHub with: `if(!require('devtools')) install.packages('devtools'); devtools::install_github('TIBHannover/BacDiveR')`.
-
-3.  After installing, follow the instructions on the console to save your login
-    credentials locally and restart R(Studio) or run `usethis::edit_r_environ()`
+    
+2.  Before installing, run `usethis::edit_r_environ()`
     and ensure it contains the following:
 
 ```
 BacDive_email=your.email@provider.org
 BacDive_password=YOUR_20_char_password
 ```
+
+3.  Save and restart R.
+
+3.  Once you have your login credentials saved in your .Renviron, install the [latest BacDiveR release][releases]
+    from GitHub with: `if(!require('devtools')) install.packages('devtools'); devtools::install_github('TIBHannover/BacDiveR')`.
 
 In the examples and vignettes, the data retrieval will only work if your login credentials are correct in themselves (no typos) _and_ were correctly saved. Console output like `"{\"detail\": \"Invalid username/password\"}"`, or `Error: $ operator is invalid for atomic vectors` indicates that either the login credentials are incorrect, or the `.Renviron` file.
 
