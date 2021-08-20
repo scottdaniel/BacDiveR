@@ -15,7 +15,7 @@ It was also built to serve as a demonstration object during [TIB's "FAIR Data & 
 [FDS]: https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/#schedule
 [/news]: https://tibhannover.github.io/BacDiveR/news/index.html
 [page]: https://tibhannover.github.io/BacDiveR/
-[reg]: https://bacdive.dsmz.de/api/bacdive/registration/register/
+[reg]: https://api.bacdive.dsmz.de/
 [source]: https://github.com/TIBHannover/BacDiveR/
 [releases]: https://github.com/TIBHannover/BacDiveR/releases/latest
 
